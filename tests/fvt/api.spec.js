@@ -13,7 +13,7 @@
     */ 
 
     describe('API', function() {
-        this.timeout(10000);
+        this.timeout(100000);
         it('list all items', function(done) {
             utils.makeRestCall({method: 'GET'}, '/items', null, function(err, resp, body) {
                 // Because we are sometimes left with more than 8 test cases, I have changed the test case to compare against the array's length.
